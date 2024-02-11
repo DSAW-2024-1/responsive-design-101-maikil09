@@ -65,6 +65,19 @@ El objetivo de este taller es hacer que la página que ya desarrollamos se vea c
 | **Total**                                          | **100** |
 
 
+## Desarrollo Taller
+
+- Pagina desarrollada desde un computador
+![vista de la pagina desde un computador](./assets/images/Desktop-view.png)
+
+-pagina desarrollada desde un Ipad
+![vista de la pagina desde un Ipad](./assets/images/Ipad-view.png)
+
+-pagina desarrollada desde un Iphone
+![vista de la pagina desde un Iphone](./assets/images/Iphone-view.png)
+
+### Link Página Web: [Página Responsive](https://dsaw-2024-1.github.io/responsive-design-101-maikil09/)
+
 ### Créditos
 - [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
