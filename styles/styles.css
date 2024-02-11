@@ -1,0 +1,165 @@
+/*Mediante estos link descargo las fuentes necesarias para realizar el proyecto*/
+@import url('https://fonts.google.com/specimen/Young+Serif');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+/*
+Aqui estoy definiendo mis valores iniciales para que luego las medidas que viene por defecto no interfieran con mi
+diseño
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Young Serif';
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.image-Container img {
+    width: 100%;
+    height: auto;
+}
+
+.Container { 
+    background-color: hsl(0, 0%, 100%);
+    margin: auto;
+    min-width: 300px;
+    max-width: 800px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+p, li {
+    font-family: 'Outfit';
+    color: hsl(30, 10%, 34%);
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+img {
+    border-radius: 40px;
+    width: 800px;
+    margin: auto;
+    padding: 25px;
+}
+
+.first-section {
+    margin: 0 30px;
+}
+.primerTitulo {
+    color: hsl(24, 5%, 18%);
+    font-size: 2.4em;
+    font-weight: bold;
+    padding: 10px 0 20px 0;
+}
+
+.second-section {
+    background-color: hsl(330, 100%, 98%);
+    margin: 30px;
+    border-radius: 10px;
+    font-family: 'Outfit';
+    line-height: 2rem;
+}
+
+.section {
+    margin: 15px 30px;
+    font-family: 'Outfit';
+    line-height: 2rem;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.second-section h3 {
+    color: hsl(332, 51%, 32%);
+    font-size: 1.2rem;
+    padding: 20px 10px 5px 20px;
+}
+
+ul, ol {
+    padding: 10px 30px 30px 25px;
+}
+/*Con esto especificó el color de los punticos y numeros de las listas de un color diferente */
+li::marker{
+    color: #854b40;
+    font-weight: bold;
+}
+li{
+    padding-left: 18px;
+}
+h2 {
+    color: hsl(14, 45%, 36%);
+}
+
+table {
+    font-family: 'Outfit';
+    border-collapse: collapse;
+    position: relative;
+    width: 720px;
+    padding: 20px;
+}
+
+td {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    color: hsl(30, 10%, 34%);
+}
+
+.info {
+    padding: 10px 20px;
+}
+
+.num {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+.attribution {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Outfit';
+}
+
+/*Con este @media logro que mi pagina sea responsive es decir que se pueda ver bastante bien desde diferentes positivos 
+como lo pueden ser telefonos y tablets, pro defecto tenemos que cuando la pantalla alcanza un tamaño de 800px empieza a modificar
+el tamaño de los elementos mas importantes como lo puede ser el la imagen de los huevitos y los contenedores */
+@media only screen and (max-width: 800px) {
+    img {
+        width: 100%;
+        border-radius: 0;
+        padding: 0;
+    }
+    
+    .Container {
+        width: 90%;
+        margin: auto;
+    }
+    
+    table {
+        width: 100%;
+    }
+    
+    .primerTitulo {
+        font-size: 7vw; 
+    }
+}
+
+/*Agrego algunas pseudoclases para darle algunas nimaciones a mi pagina en este caso se vera cuando se pase el mouse por 
+encima del elemento*/
+.section:hover{
+    color: black;
+    border:30px;
+}
+img:hover{
+    border-radius: 50px;
+}
+li:hover::marker{
+   color:rgb(9, 158, 66); 
+}
+h2:hover,h3:hover{
+    text-decoration: underline;
+}
